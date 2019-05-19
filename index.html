@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+
+    <!-- _______________ CSS ________________ -->
+    <link rel="stylesheet" href="css/style1.css">
+    <!-- _______________ JS _________________ -->
+    <script type="text/javascript" src="js/lib1.js"></script>
+    <!-- _______________ FONTS ______________ -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+    <title>SHOOFPING</title>
+  </head>
+  <body>
+
+    <!-- _______________ MENU ________________ -->
+    <div class="menu">
+      <div class="menu-icn">
+        <div class="menu-icn-bar"></div>
+        <div class="menu-icn-bar"></div>
+        <div class="menu-icn-bar"></div>
+      </div>
+    </div>
+    <!-- _______________ END MENU ____________ -->
+
+    <!-- _______________ Home ________________ -->
+    <section class="container home" id="home">
+      <video autoplay muted loop id="shoofBG">
+        <source src="videos/shoofBG.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+      </video>
+      <div class="filter"></div>
+      <div class="home-content">
+        <div class="home-content-text-div">
+          <div class="home-content-p-number">
+            <p>01</p><p>/06</p>
+          </div>
+          <h1 class="title">Home</h1>
+          <p class="description">
+            Connecting emotionally with your customers through an exciting virtual try on shopping experience.
+          </p>
+          <hr class="customHR">
+          <div class="control-btn">
+            <img src="images/icons/prev.png" alt="Prev" class="desabled">
+            <img src="images/icons/next.png" alt="Next" onclick="goToNext('home','whyUs')">
+            <img src="images/icons/nav.png" alt="Browse" onclick="inviteBrowse()">
+          </div>
+        </div>
+      </div>
+      <div class="right-bottom">
+        <p class="right-bottom-title">Follow us on</p>
+        <div>
+          <img src="images/icons/facebook.png" alt="Facebook">
+          <img src="images/icons/instagram.png" alt="Instagram">
+          <img src="images/icons/youtube.png" alt="Youtube">
+        </div>
+      </div>
+    </section>
+    <!-- _______________ END Home ____________ -->
+
+    <!-- _______________ WHY US ______________ -->
+    <section class="container why-us" id="whyUs">
+      <div class="bg-div"></div>
+      <div class="filter"></div>
+      <div class="home-content">
+        <div class="home-content-text-div">
+          <div class="home-content-p-number">
+            <p>02</p><p>/06</p>
+          </div>
+          <h1 class="title">Why Us</h1>
+          <p class="description lowerfont">
+            Welcome to the Experience Age! In this digital era, we aren’t here to prove you how important your digital brand experience is important for your customers today before anytime before. We are only here to help you access to the right tools by combining the right technologies for you, specific to your brand needs.
+          </p>
+          <hr class="customHR">
+          <div class="control-btn">
+            <img src="images/icons/prev.png" alt="Prev" onclick="goToPrev('home','whyUs')">
+            <img src="images/icons/next.png" alt="Next" onclick="goToNext('whyUs','shoofAR')">
+            <img src="images/icons/nav.png" alt="Browse" onclick="inviteBrowse()">
+          </div>
+        </div>
+      </div>
+      <div class="why-us-inner">
+        <div class="cadre">
+          <iframe src="https://www.youtube.com/embed/2qhYkeotstQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <div class="inner-filter"></div>
+        </div>
+        <img src="images/icons/down.png" alt="Down" class="downIMG">
+      </div>
+      <div class="shoofAI">
+      </div>
+    </section>
+    <!-- _______________ END WHY US __________ -->
+
+    <!-- ____________ SHOOF AR ________________ -->
+    <section class="container shoofAR" id="shoofAR">
+      <div class="bg-div"></div>
+      <div class="filter"></div>
+      <div class="home-content">
+        <div class="home-content-text-div">
+          <div class="home-content-p-number">
+            <p>03</p><p>/06</p>
+          </div>
+          <h1 class="title">Shoof AR</h1>
+          <p class="description lowerfont">
+            Our teams of experts in Augmented Reality, Artificial Intelligence, Digital Experience Marketing and User Experience are here to transform your e-shop in the new place to be for your customers! Let’s connect!
+          </p>
+          <hr class="customHR">
+          <div class="control-btn">
+            <img src="images/icons/prev.png" alt="Prev" onclick="goToPrev('whyUs','shoofAR')">
+            <img src="images/icons/next.png" alt="Next" onclick="goToNext('shoofAR','support')">
+            <img src="images/icons/nav.png" alt="Browse" onclick="inviteBrowse()">
+          </div>
+        </div>
+      </div>
+      <div class="cadre shoofAR-gif">
+        <video autoplay muted loop id="shoofBG">
+          <source src="videos/shoofAR.mp4" type="video/mp4">
+          Your browser does not support HTML5 video.
+        </video>
+        <div class="shoofAR-filter"></div>
+      </div>
+    </section>
+    <!-- ____________ END SHOOF AR ____________ -->
+
+    <!-- ______________ SUPPORT _______________ -->
+    <section class="container support" id="support">
+      <div class="bg-div"></div>
+      <div class="filter"></div>
+      <div class="home-content">
+        <div class="home-content-text-div">
+          <div class="home-content-p-number">
+            <p>04</p><p>/06</p>
+          </div>
+          <h1 class="title">Support</h1>
+          <p class="sub-title">Next AI</p>
+          <p class="description lowerfont">
+            Shoofping won the 1st place during the @NextAi StartupFest 2018 Pitch–  From March - August 2019 Shoofping will be  part of a world-class AI accelerator, having access to leading AI technologies and tools.
+          </p>
+          <hr class="customHR">
+          <div class="control-btn">
+            <img src="images/icons/prev.png" alt="Prev" onclick="goToPrev('shoofAR','support')">
+            <img src="images/icons/next.png" alt="Next" onclick="goToNext('support','tbis')">
+            <img src="images/icons/nav.png" alt="Browse" onclick="inviteBrowse()">
+          </div>
+        </div>
+      </div>
+      <div class="why-us-inner">
+        <div class="cadre support-cadre">
+          <img src="images/logos/nextai.jpg" alt="Next AI" class="nextAI">
+          <div class="support-filter"></div>
+        </div>
+        <img src="images/icons/down.png" alt="Down" class="downIMG">
+      </div>
+      <div class="support-scrolled">
+        <div class="filter fixed"></div>
+        <div class="support-new-inner">
+          <div class="home-content right-float">
+            <div class="right-float-text-div">
+              <p class="sub-title">Faycal Bouchlaghem</p>
+              <p class="description lowerfont">
+                We are proud to have Faycal Bouchlaghem in our company board. Mr Faycal Bouchlaghem is also one of our first angel investors. Former Microsoft General Manager Asia Pacific and Global ICT Leader, he joined Shoofping in September 2017.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="support-imgs">
+        <div class="filter-pers"></div>
+        <img src="images/persons/faycel-bouchlaghem.jpg" alt="Faycel Bouchlaghem">
+      </div>
+    </section>
+    <!-- ______________ END SUPPORT ___________ -->
+
+    <!-- ________________ TBIS _______________ -->
+    <section class="container tbis" id="tbis">
+      <div class="bg-div"></div>
+      <div class="filter"></div>
+      <div class="home-content">
+        <div class="home-content-text-div">
+          <div class="home-content-p-number">
+            <p>05</p><p>/06</p>
+          </div>
+          <h1 class="title">They Beleive in us</h1>
+          <hr class="customHR">
+          <div class="control-btn">
+            <img src="images/icons/prev.png" alt="Prev" onclick="goToPrev('support','tbis')">
+            <img src="images/icons/next.png" alt="Next" onclick="goToNext('tbis','contact')">
+            <img src="images/icons/nav.png" alt="Browse" onclick="inviteBrowse()">
+          </div>
+        </div>
+      </div>
+      <div class="why-us-inner">
+        <img src="images/icons/down.png" alt="Down" class="downIMG di-fixed">
+      </div>
+      <div class="tbis-scrolled">
+        <div class="filter fixed"></div>
+        <div class="inner-section">
+          <div class="inner-section-upper">
+            <div class="inner-section-div-img">
+              <div class="tbis-inner-filter"></div>
+              <iframe src="https://www.youtube.com/embed/rlqwKflKZJ4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="inner-section-div-txt">
+              <p>
+                They believe in us, cause they trust our determination to help your e-Shop transform your customers experience in a way that will increase your Conversion Rates, Sales and Customer Happiness.
+              </p>
+            </div>
+          </div>
+          <div class="inner-section-lower">
+            <div class="inner-section-div-txt">
+              <p>
+                They believe in us, cause we showed how close we are with our customers and partners, always trying to understand their real pain points and tackling them through Innovation and Creativity.
+              </p>
+              <p class="tags">
+                #ShoofpingNeverStops ! That’s our Moto!
+              </p>
+            </div>
+            <div class="inner-section-div-img">
+              <div class="tbis-inner-filter"></div>
+              <iframe src="https://www.youtube.com/embed/aTR0QLyoajA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+        <img src="images/logos/bar.jpeg" alt="" class="tbis-logos">
+      </div>
+    </section>
+    <!-- ________________ END TBIS ___________ -->
+
+    <!-- ________________ CONTACT ______________ -->
+    <section class="container contact" id="contact">
+      <div class="bg-div"></div>
+      <div class="filter"></div>
+      <div class="home-content">
+        <div class="home-content-text-div">
+          <div class="home-content-p-number">
+            <p>06</p><p>/06</p>
+          </div>
+          <h1 class="title">Become Our Partner</h1>
+          <p class="description lowerfont">Phone: 514 970 8855</p>
+          <p class="description lowerfont">E-Mail: info@shoofping.com</p>
+          <p class="description lowerfont">Adresse: 888 Wellington, #505 Montreal, QC</p>
+          <hr class="customHR">
+          <div class="control-btn">
+            <img src="images/icons/prev.png" alt="Prev" onclick="goToPrev('tbis','contact')">
+            <img src="images/icons/next.png" alt="Next" class="desabled">
+            <img src="images/icons/nav.png" alt="Browse" onclick="inviteBrowse()">
+          </div>
+        </div>
+      </div>
+      <form class="contact-div">
+        <div class="flNames">
+          <input type="text" name="firstName" value="" required placeholder="First Name">
+          <input type="text" name="lastName" value="" required placeholder="Last Name">
+        </div>
+        <input type="email" name="email" value="" required placeholder="E-Mail">
+        <input type="text" name="company" value="" required placeholder="Company">
+        <textarea name="message" required placeholder="Message..."></textarea>
+        <input type="submit" value="Send">
+      </form>
+    </section>
+    <!-- ________________ END CONTACT __________ -->
+
+
+
+    <!-- ________________ BROWSE ______________ -->
+    <section class="browse" id="browse">
+      <img src="images/icons/close.png" alt="Close" class="close-btn" onclick="closeBrowse()">
+      <p class="browse-txt">Select a page</p>
+      <div class="browse-inner">
+        <div class="biO">
+          <img src="images/pages/page1.jpg" alt="Home" onclick="goToPage(0)">
+          <img src="images/pages/page2.jpg" alt="Why us" onclick="goToPage(1)">
+          <img src="images/pages/page3.jpg" alt="Shoof AR" onclick="goToPage(2)">
+        </div>
+        <div class="biT">
+          <img src="images/pages/page4.jpg" alt="Support" onclick="goToPage(3)">
+          <img src="images/pages/page5.jpg" alt="They Believe in us" onclick="goToPage(4)">
+          <img src="images/pages/page6.jpg" alt="Contact" onclick="goToPage(5)">
+        </div>
+      </div>
+    </section>
+    <!-- ________________ END BROWSE __________ -->
+
+
+  </body>
+</html>
