@@ -293,11 +293,12 @@ html, body{
   z-index: 2;
 }
 .sub-title{
-  font-size: 28px;
+  font-size: 24px;
   font-weight: bold;
   color: #19c1c1;
   text-decoration: underline;
   letter-spacing: 3px;
+  margin-top: -5px;
 }
 .support-scrolled{
   width: 100%;
